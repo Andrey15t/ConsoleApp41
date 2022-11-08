@@ -1,4 +1,17 @@
-﻿int[] numbers = { 1, -2, 3, 5, -1, 2, -3, -5 };
+﻿using System.Globalization;
+
+Random random = new Random();
+
+//статические данные
+//int[] numbers = { 1, -2, 3, 5, -1, 2, -3, -5 };
+
+//рандомные числа
+int size = 20;
+int[] numbers = new int[size];
+for(int i = 0; i<size; i++)
+{
+    numbers[i] = random.Next(-50,50);
+}
 
 //кол-во отрицательных чисел
 int countNegative = 0;
